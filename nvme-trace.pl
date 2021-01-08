@@ -461,6 +461,7 @@ sub parse_cmd {
 }
 
 while (<>) {
+	chomp;
 	if ($_ =~ /nvme_setup_cmd/) {
 		parse_cmd($_);
 	} else {
